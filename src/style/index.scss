@@ -93,6 +93,7 @@ nav {
         flex: 1;
         display: flex;
         align-items: center;
+        max-width: 100%;
         img{
             border-radius: 25%;
         }
@@ -138,5 +139,13 @@ nav {
         .experience-detail-rehab {
             text-transform: lowercase;
         }
+    }
+}
+
+.section-contact {
+    
+    .icon svg {
+        height: 3rem;
+        fill: map-get($color, dark-feature);
     }
 }
