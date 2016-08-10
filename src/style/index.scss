@@ -50,6 +50,21 @@ nav {
     }
 }
 
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
 .section {
     padding: 1rem 2rem;
+    width: 80%;
+    margin: 0 auto;
+    flex: 1 1 0;
+}
+
+.section-title {
+    color: map-get($color, light-feature);
+    border-bottom: 1px auto map-get($color, light-feature);
 }
