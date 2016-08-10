@@ -66,5 +66,29 @@ nav {
 
 .section-title {
     color: map-get($color, light-feature);
-    border-bottom: 1px auto map-get($color, light-feature);
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 33%;
+    padding: 1rem 2rem;
+    align-items: center;
+    
+    .link {
+        color: map-get($color, dark-feature);
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    
+    .thumbnail {
+        max-width: 16rem;
+        padding-bottom: 1rem;
+    }
 }
