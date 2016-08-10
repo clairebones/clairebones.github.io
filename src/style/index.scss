@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 * {
     box-sizing: border-box;
@@ -24,6 +25,10 @@ svg {
     top: -1px;
     box-sizing: content-box;
     pointer-events: none;
+}
+
+li {
+    padding: 0.3rem 0;
 }
 
 .name {
@@ -68,10 +73,40 @@ nav {
     color: map-get($color, light-feature);
 }
 
+.about-content {
+    display: flex;
+    flex-flow: column wrap;
+    
+    @include bp(tab-up) {
+        flex-direction: row;
+    }
+    
+    .about-description {
+        flex: 3;
+    
+        @include bp(tab-up) {
+            padding-right: 3rem;
+        }
+    }
+    
+    .about-photo {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        img{
+            border-radius: 25%;
+        }
+    }
+}
+
 .projects {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between
+    flex-flow: row wrap;
+    justify-content: center;
+        
+    @include bp(tab-up) {
+        justify-content: space-between;   
+    }
 }
 
 .project {
@@ -90,5 +125,18 @@ nav {
     .thumbnail {
         max-width: 16rem;
         padding-bottom: 1rem;
+    }
+}
+
+.experience {
+    
+    .experience-details {
+        color: map-get($color, dark-feature);
+        text-transform: uppercase;
+        font-weight: 500;
+    
+        .experience-detail-rehab {
+            text-transform: lowercase;
+        }
     }
 }
