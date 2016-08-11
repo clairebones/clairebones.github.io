@@ -198,5 +198,9 @@ nav {
     .icon svg {
         height: 3rem;
         fill: map-get($color, light);
+        
+        &:hover {
+            height: 4rem;
+        }
     }
 }

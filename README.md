@@ -1,2 +1,2 @@
 # clairebones.github.io
-Personal portfolio and information page
+Personal portfolio and information page - WIP
