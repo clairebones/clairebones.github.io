@@ -50,8 +50,18 @@ nav {
     margin: 0;
     height: 4rem;
     background-color: map-get($color, dark);
+    
     a {
         color: map-get($color, white);
+        text-decoration: none;
+        
+        @include bp(tab-up) {
+            font-size: 2rem;   
+        }
+        
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -63,7 +73,7 @@ nav {
 }
 
 .section {
-    padding: 1rem 2rem;
+    padding: 1rem;
     width: 80%;
     margin: 0 auto;
     flex: 1 1 0;
