@@ -202,6 +202,12 @@ nav {
             width: 60%;   
         }
     }
+  
+    .contact-icon {
+        &:hover, &:focus {
+            border: 2px solid white;
+        }
+    }
     
     .icon svg {
         height: 3rem;
