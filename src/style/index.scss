@@ -11,10 +11,12 @@ html {
 }
 
 body {
-    background-color: map-get($color, light);    
+    background-color: map-get($color, white);
+    color: map-get($color, text-color);
     height: auto;
     min-height: 100%;
-    font-family: 'Dosis', Arial, sans-serif;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 16px;
     margin: 0;
 }
 
@@ -36,7 +38,9 @@ li {
     width: 100%;
     height: 12rem;
     background-color: map-get($color, dark-feature);
+    font-family: 'Pacifico', Arial, Helvetica, sans-serif;
     font-size: 3rem;
+    font-weight: 300;
     color: map-get($color, white);
     display: flex;
     justify-content: center;
@@ -44,12 +48,13 @@ li {
 }
 
 nav {
+    font-family: 'Pacifico', Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 0;
     height: 4rem;
-    background-color: map-get($color, dark);
+    background-color: map-get($color, light-feature);
     
     a {
         color: map-get($color, white);
